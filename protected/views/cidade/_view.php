@@ -14,7 +14,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('id_estado')); ?>:</b>
-	<?php echo CHtml::encode($data->id_estado); ?>
+	<?php echo CHtml::encode($data->idEstado->nm_estado); ?>
 	<br />
 
 

@@ -23,6 +23,20 @@ $this->menu=array(
 	'attributes'=>array(
 		'id_cidade',
 		'nm_cidade',
-		'id_estado',
+//1a alternativa de visualização de uma tabela associada
+                array(
+                    'name' => 'id_estado',
+                    'value' => $model -> idEstado->nm_estado,
+                ),
+ //2a alternativa de visualização de uma tabela associada. usando "if ternário"
+            array(
+                        'name' => 'id_estado',
+                        'value' => (!empty($model->idEstado)) ? $model->idEstado->nm_estado : ""
+                ),
+  //3a alternativa: altera o label (internacionalização)
+            array(
+                        'name' => 'nm_estado',
+                        'value' => (!empty($model->idEstado)) ? $model->idEstado->nm_estado : ""
+                ),
 	),
 )); ?>

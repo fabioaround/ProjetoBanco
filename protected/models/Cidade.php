@@ -60,6 +60,7 @@ class Cidade extends CActiveRecord
 		return array(
 			'id_cidade' => Yii::t('cidade','id_cidade'),
                         'nm_cidade' => Yii::t('cidade','nm_cidade'),
+                        'nm_estado' => Yii::t('estado','nm_estado'),
 		);
 	}
 
