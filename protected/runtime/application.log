@@ -1,0 +1,2 @@
+2014/06/18 16:03:39 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'banco.dvd' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `dvd`.
+in /Applications/MAMP/htdocs/Banco/index.php (13)
