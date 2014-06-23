@@ -58,9 +58,8 @@ class Cidade extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id_cidade' => 'Id Cidade',
-			'nm_cidade' => 'Nm Cidade',
-			'id_estado' => 'Id Estado',
+			'id_cidade' => Yii::t('cidade','id_cidade'),
+                        'nm_cidade' => Yii::t('cidade','nm_cidade'),
 		);
 	}
 
