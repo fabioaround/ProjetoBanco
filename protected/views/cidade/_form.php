@@ -26,9 +26,14 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'id_estado'); ?>
-		<?php echo $form->textField($model,'id_estado'); ?>
-		<?php echo $form->error($model,'id_estado'); ?>
+		<?php echo $form->labelEx($model,'nm_estado'); ?>
+		<?php 
+                    $estadoList = array(null => ''); // estou anulando o valor da array caso ela exista
+                    $estadoList = CHtml::listdata($estados, 'id_estado',function($estado) {
+                        return CHtml::encode($estado->nm_estado);
+                    });
+                 ?>
+		<?php echo $form->dropDownList($model,'id_estado',$estadoList); ?>
 	</div>
 
 	<div class="row buttons">

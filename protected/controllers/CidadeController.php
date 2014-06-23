@@ -76,6 +76,7 @@ class CidadeController extends Controller
 
 		$this->render('create',array(
 			'model'=>$model,
+                        'estados' =>Estado::model()->findAll(),
 		));
 	}
 
