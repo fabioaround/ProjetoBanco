@@ -50,13 +50,25 @@ class ListaPessoaController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Pessoa');
+                $model = new Pessoa;
+                $model->unsetAttributes();
+//		$dataProvider=new CActiveDataProvider('Pessoa');
 		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
+                    'model' => $model,
+                    'dataProvider'=>$model->search()
 		));
 	}
-
-
+        
+//        public function actionAutoCompleteNomePessoa($term)
+//        {
+//            echo CJSON::encode(Pessoa::model()->getNomePessoa($term));
+//        }
+        
+        public function actionAutoCompleteNomePessoa($term)
+        {
+          echo CJSON::encode(Pessoa::model()->getAutoCompleteNomePessoa($term));
+        }
+        
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
@@ -66,7 +78,7 @@ class ListaPessoaController extends Controller
 	 */
 	public function loadModel($id)
 	{
-		$model=Estado::model()->findByPk($id);
+		$model=Pessoa::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;

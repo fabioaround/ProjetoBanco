@@ -286,3 +286,1101 @@ REQUEST_URI=/Banco/index.php
 in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/layouts/main.php (2)
 in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/layouts/column1.php (6)
 in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/SiteController.php (32)
+2014/06/25 16:00:41 [error] [php] require(): Filename cannot be empty (/Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CBaseController.php:130)
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/zii/widgets/CListView.php(291): ListaPessoaController->renderFile()
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/zii/widgets/CBaseListView.php(167): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback()
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/zii/widgets/CBaseListView.php(135): CListView->renderContent()
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CBaseController.php(173): CListView->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php(20): ListaPessoaController->widget()
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CBaseController.php(126): require()
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CBaseController.php(95): ListaPessoaController->renderInternal()
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(869): ListaPessoaController->renderFile()
+#10 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(782): ListaPessoaController->renderPartial()
+#11 /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php(56): ListaPessoaController->render()
+#12 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/actions/CInlineAction.php(49): ListaPessoaController->actionIndex()
+#13 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#14 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(133): ListaPessoaController->runAction()
+#15 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#17 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): ListaPessoaController->filterAccessControl()
+#18 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#19 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#20 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): ListaPessoaController->runActionWithFilters()
+#21 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): ListaPessoaController->run()
+#22 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#23 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CWebApplication->run()
+REQUEST_URI=/Banco/index.php?r=listaPessoa
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php (20)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php (56)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/index.php (12)
+2014/06/25 16:12:42 [error] [exception.CException] exception 'CException' with message 'The column must be specified in the format of "Name:Type:Label", where "Type" and "Label" are optional.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/zii/widgets/grid/CGridView.php:412
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/zii/widgets/grid/CGridView.php(383): CGridView->createDataColumn('Nome Pessoa')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/zii/widgets/grid/CGridView.php(359): CGridView->initColumns()
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CBaseController.php(147): CGridView->init()
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#4 /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php(35): CBaseController->widget('zii.widgets.gri...', Array)
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CBaseController.php(126): require('/Users/fabiopri...')
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/fabiopri...', Array, true)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(869): CBaseController->renderFile('/Users/fabiopri...', Array, true)
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#9 /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php(56): CController->render('index', Array)
+#10 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/actions/CInlineAction.php(49): ListaPessoaController->actionIndex()
+#11 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#18 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('')
+#20 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa')
+#21 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#22 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#23 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa
+---
+2014/06/25 16:16:58 [error] [php] Undefined variable: model (/Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php:22)
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(869): ListaPessoaController->renderFile()
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(782): ListaPessoaController->renderPartial()
+#2 /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php(56): ListaPessoaController->render()
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/actions/CInlineAction.php(49): ListaPessoaController->actionIndex()
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(133): ListaPessoaController->runAction()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): ListaPessoaController->filterAccessControl()
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): ListaPessoaController->runActionWithFilters()
+#12 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): ListaPessoaController->run()
+#13 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CWebApplication->run()
+REQUEST_URI=/Banco/index.php?r=listaPessoa
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php (22)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php (56)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/index.php (12)
+2014/06/25 16:19:42 [error] [php] Undefined variable: estado (/Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php:22)
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(869): ListaPessoaController->renderFile()
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(782): ListaPessoaController->renderPartial()
+#2 /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php(56): ListaPessoaController->render()
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/actions/CInlineAction.php(49): ListaPessoaController->actionIndex()
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(133): ListaPessoaController->runAction()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): ListaPessoaController->filterAccessControl()
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): ListaPessoaController->runActionWithFilters()
+#12 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): ListaPessoaController->run()
+#13 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CWebApplication->run()
+REQUEST_URI=/Banco/index.php?r=listaPessoa
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php (22)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php (56)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/index.php (12)
+2014/06/25 16:20:14 [error] [php] Undefined variable: model (/Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php:22)
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(869): ListaPessoaController->renderFile()
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(782): ListaPessoaController->renderPartial()
+#2 /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php(56): ListaPessoaController->render()
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/actions/CInlineAction.php(49): ListaPessoaController->actionIndex()
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(133): ListaPessoaController->runAction()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): ListaPessoaController->filterAccessControl()
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): ListaPessoaController->runActionWithFilters()
+#12 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): ListaPessoaController->run()
+#13 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CWebApplication->run()
+REQUEST_URI=/Banco/index.php?r=listaPessoa
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php (22)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php (56)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/index.php (12)
+2014/06/25 16:20:49 [error] [php] Undefined variable: model (/Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CComponent.php(612) : eval()'d code:1)
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/zii/widgets/grid/CGridColumn.php(151): CDataColumn->renderDataCellContent()
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/zii/widgets/grid/CGridView.php(616): CDataColumn->renderDataCell()
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/zii/widgets/grid/CGridView.php(572): CGridView->renderTableRow()
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/zii/widgets/grid/CGridView.php(482): CGridView->renderTableBody()
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#5 unknown(0): CGridView->renderSection()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback()
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/zii/widgets/CBaseListView.php(135): CGridView->renderContent()
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CBaseController.php(173): CGridView->run()
+#9 /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php(38): ListaPessoaController->widget()
+#10 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CBaseController.php(126): require()
+#11 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CBaseController.php(95): ListaPessoaController->renderInternal()
+#12 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(869): ListaPessoaController->renderFile()
+#13 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(782): ListaPessoaController->renderPartial()
+#14 /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php(56): ListaPessoaController->render()
+#15 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/actions/CInlineAction.php(49): ListaPessoaController->actionIndex()
+#16 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#17 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(133): ListaPessoaController->runAction()
+#18 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#20 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): ListaPessoaController->filterAccessControl()
+#21 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#22 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#23 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): ListaPessoaController->runActionWithFilters()
+#24 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): ListaPessoaController->run()
+#25 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#26 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#27 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CWebApplication->run()
+REQUEST_URI=/Banco/index.php?r=listaPessoa
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php (38)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php (56)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/index.php (12)
+2014/06/25 16:23:47 [error] [php] Use of undefined constant id_pessoa - assumed 'id_pessoa' (/Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CComponent.php(612) : eval()'d code:1)
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/zii/widgets/grid/CGridColumn.php(151): CDataColumn->renderDataCellContent()
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/zii/widgets/grid/CGridView.php(616): CDataColumn->renderDataCell()
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/zii/widgets/grid/CGridView.php(572): CGridView->renderTableRow()
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/zii/widgets/grid/CGridView.php(482): CGridView->renderTableBody()
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#5 unknown(0): CGridView->renderSection()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback()
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/zii/widgets/CBaseListView.php(135): CGridView->renderContent()
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CBaseController.php(173): CGridView->run()
+#9 /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php(30): ListaPessoaController->widget()
+#10 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CBaseController.php(126): require()
+#11 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CBaseController.php(95): ListaPessoaController->renderInternal()
+#12 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(869): ListaPessoaController->renderFile()
+#13 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(782): ListaPessoaController->renderPartial()
+#14 /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php(56): ListaPessoaController->render()
+#15 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/actions/CInlineAction.php(49): ListaPessoaController->actionIndex()
+#16 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#17 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(133): ListaPessoaController->runAction()
+#18 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#20 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): ListaPessoaController->filterAccessControl()
+#21 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#22 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#23 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): ListaPessoaController->runActionWithFilters()
+#24 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): ListaPessoaController->run()
+#25 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#26 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#27 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CWebApplication->run()
+REQUEST_URI=/Banco/index.php?r=listaPessoa
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php (30)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php (56)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/index.php (12)
+2014/06/25 16:31:42 [error] [php] Undefined variable: model (/Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php:19)
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(869): ListaPessoaController->renderFile()
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(782): ListaPessoaController->renderPartial()
+#2 /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php(56): ListaPessoaController->render()
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/actions/CInlineAction.php(49): ListaPessoaController->actionIndex()
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(133): ListaPessoaController->runAction()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): ListaPessoaController->filterAccessControl()
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): ListaPessoaController->runActionWithFilters()
+#12 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): ListaPessoaController->run()
+#13 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CWebApplication->run()
+REQUEST_URI=/Banco/index.php?r=listaPessoa
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php (19)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php (56)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/index.php (12)
+2014/06/25 16:32:35 [error] [php] Undefined variable: model (/Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php:17)
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(869): ListaPessoaController->renderFile()
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(782): ListaPessoaController->renderPartial()
+#2 /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php(56): ListaPessoaController->render()
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/actions/CInlineAction.php(49): ListaPessoaController->actionIndex()
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(133): ListaPessoaController->runAction()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): ListaPessoaController->filterAccessControl()
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): ListaPessoaController->runActionWithFilters()
+#12 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): ListaPessoaController->run()
+#13 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CWebApplication->run()
+REQUEST_URI=/Banco/index.php?r=listaPessoa
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php (17)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php (56)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/index.php (12)
+2014/06/25 16:33:25 [error] [php] Undefined variable: model (/Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php:18)
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(869): ListaPessoaController->renderFile()
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(782): ListaPessoaController->renderPartial()
+#2 /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php(56): ListaPessoaController->render()
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/actions/CInlineAction.php(49): ListaPessoaController->actionIndex()
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(133): ListaPessoaController->runAction()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): ListaPessoaController->filterAccessControl()
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): ListaPessoaController->runActionWithFilters()
+#12 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): ListaPessoaController->run()
+#13 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CWebApplication->run()
+REQUEST_URI=/Banco/index.php?r=listaPessoa
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php (18)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php (56)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/index.php (12)
+2014/06/25 16:34:10 [error] [php] Undefined variable: model (/Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php:18)
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(869): ListaPessoaController->renderFile()
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(782): ListaPessoaController->renderPartial()
+#2 /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php(56): ListaPessoaController->render()
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/actions/CInlineAction.php(49): ListaPessoaController->actionIndex()
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(133): ListaPessoaController->runAction()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): ListaPessoaController->filterAccessControl()
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): ListaPessoaController->runActionWithFilters()
+#12 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): ListaPessoaController->run()
+#13 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CWebApplication->run()
+REQUEST_URI=/Banco/index.php?r=listaPessoa
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php (18)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php (56)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/index.php (12)
+2014/06/25 16:36:09 [error] [php] Undefined variable: model (/Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php:14)
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(869): ListaPessoaController->renderFile()
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(782): ListaPessoaController->renderPartial()
+#2 /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php(56): ListaPessoaController->render()
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/actions/CInlineAction.php(49): ListaPessoaController->actionIndex()
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(133): ListaPessoaController->runAction()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): ListaPessoaController->filterAccessControl()
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): ListaPessoaController->runActionWithFilters()
+#12 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): ListaPessoaController->run()
+#13 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CWebApplication->run()
+REQUEST_URI=/Banco/index.php?r=listaPessoa
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php (14)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php (56)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/index.php (12)
+2014/06/25 16:38:56 [error] [php] Undefined variable: pessoa (/Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php:14)
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(869): ListaPessoaController->renderFile()
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(782): ListaPessoaController->renderPartial()
+#2 /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php(58): ListaPessoaController->render()
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/actions/CInlineAction.php(49): ListaPessoaController->actionIndex()
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(133): ListaPessoaController->runAction()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): ListaPessoaController->filterAccessControl()
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): ListaPessoaController->runActionWithFilters()
+#12 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): ListaPessoaController->run()
+#13 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CWebApplication->run()
+REQUEST_URI=/Banco/index.php?r=listaPessoa
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php (14)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php (58)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/index.php (12)
+2014/06/25 16:43:49 [error] [php] Undefined variable: model (/Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php:14)
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(869): ListaPessoaController->renderFile()
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(782): ListaPessoaController->renderPartial()
+#2 /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php(57): ListaPessoaController->render()
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/actions/CInlineAction.php(49): ListaPessoaController->actionIndex()
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(133): ListaPessoaController->runAction()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): ListaPessoaController->filterAccessControl()
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): ListaPessoaController->runActionWithFilters()
+#12 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): ListaPessoaController->run()
+#13 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CWebApplication->run()
+REQUEST_URI=/Banco/index.php?r=listaPessoa
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php (14)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php (57)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/index.php (12)
+2014/06/25 16:44:57 [error] [php] Undefined variable: pessoa (/Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php:14)
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(869): ListaPessoaController->renderFile()
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(782): ListaPessoaController->renderPartial()
+#2 /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php(58): ListaPessoaController->render()
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/actions/CInlineAction.php(49): ListaPessoaController->actionIndex()
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(133): ListaPessoaController->runAction()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): ListaPessoaController->filterAccessControl()
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): ListaPessoaController->runActionWithFilters()
+#12 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): ListaPessoaController->run()
+#13 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CWebApplication->run()
+REQUEST_URI=/Banco/index.php?r=listaPessoa
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php (14)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php (58)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/index.php (12)
+2014/06/25 16:45:22 [error] [php] Undefined variable: model (/Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php:14)
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(869): ListaPessoaController->renderFile()
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(782): ListaPessoaController->renderPartial()
+#2 /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php(58): ListaPessoaController->render()
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/actions/CInlineAction.php(49): ListaPessoaController->actionIndex()
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(133): ListaPessoaController->runAction()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): ListaPessoaController->filterAccessControl()
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): ListaPessoaController->runActionWithFilters()
+#12 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): ListaPessoaController->run()
+#13 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CWebApplication->run()
+REQUEST_URI=/Banco/index.php?r=listaPessoa
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php (14)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php (58)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/index.php (12)
+2014/06/25 16:45:44 [error] [php] Undefined variable: model (/Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php:56)
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(133): ListaPessoaController->runAction()
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): ListaPessoaController->filterAccessControl()
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): ListaPessoaController->runActionWithFilters()
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): ListaPessoaController->run()
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CWebApplication->run()
+REQUEST_URI=/Banco/index.php?r=listaPessoa
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php (56)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/index.php (12)
+2014/06/25 16:59:19 [error] [php] Use of undefined constant route - assumed 'route' (/Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/_search.php:9)
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(869): ListaPessoaController->renderFile()
+#1 /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php(14): ListaPessoaController->renderPartial()
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CBaseController.php(126): require()
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CBaseController.php(95): ListaPessoaController->renderInternal()
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(869): ListaPessoaController->renderFile()
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(782): ListaPessoaController->renderPartial()
+#6 /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php(58): ListaPessoaController->render()
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/actions/CInlineAction.php(49): ListaPessoaController->actionIndex()
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(133): ListaPessoaController->runAction()
+#10 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): ListaPessoaController->filterAccessControl()
+#13 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#15 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): ListaPessoaController->runActionWithFilters()
+#16 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): ListaPessoaController->run()
+#17 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#19 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CWebApplication->run()
+REQUEST_URI=/Banco/index.php?r=listaPessoa
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/_search.php (9)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php (14)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php (58)
+2014/06/25 17:01:08 [error] [php] Undefined variable: pessoa (/Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/_search.php:16)
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(869): ListaPessoaController->renderFile()
+#1 /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php(14): ListaPessoaController->renderPartial()
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CBaseController.php(126): require()
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CBaseController.php(95): ListaPessoaController->renderInternal()
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(869): ListaPessoaController->renderFile()
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(782): ListaPessoaController->renderPartial()
+#6 /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php(58): ListaPessoaController->render()
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/actions/CInlineAction.php(49): ListaPessoaController->actionIndex()
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(133): ListaPessoaController->runAction()
+#10 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): ListaPessoaController->filterAccessControl()
+#13 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#15 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): ListaPessoaController->runActionWithFilters()
+#16 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): ListaPessoaController->run()
+#17 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#19 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CWebApplication->run()
+REQUEST_URI=/Banco/index.php?r=listaPessoa
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/_search.php (16)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php (14)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php (58)
+2014/06/25 17:01:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "listPerson/autoCompleteNomePessoa".' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listPerson/auto...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/Banco/index.php?r=listPerson/autoCompleteNomePessoa&term=eee
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa
+---
+2014/06/25 17:46:26 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=ma
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa
+---
+2014/06/25 17:46:27 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=m
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa
+---
+2014/06/25 17:46:29 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=M
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa
+---
+2014/06/25 17:46:30 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=Ma
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa
+---
+2014/06/25 17:46:31 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=Mar
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa
+---
+2014/06/25 17:47:48 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=M
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa
+---
+2014/06/25 17:47:51 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=F
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa
+---
+2014/06/25 17:48:24 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=M
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa
+---
+2014/06/25 17:49:50 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=%3C
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa
+---
+2014/06/25 17:49:51 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=.
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa
+---
+2014/06/25 17:49:53 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=m
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa
+---
+2014/06/25 17:49:56 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=%3C
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa
+---
+2014/06/25 17:49:57 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=K
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa
+---
+2014/06/25 17:49:59 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=J
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa
+---
+2014/06/25 17:50:02 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=F
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa
+---
+2014/06/25 17:51:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=M
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa
+---
+2014/06/25 17:52:48 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=y
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa
+---
+2014/06/25 17:52:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=R
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa
+---
+2014/06/25 17:52:55 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=r
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa%2Findex&nm_pessoa=R
+---
+2014/06/25 17:54:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=T
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa%2Findex&nm_pessoa=R
+---
+2014/06/25 17:54:15 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=n
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa%2Findex&nm_pessoa=R
+---
+2014/06/25 17:54:16 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=t
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa%2Findex&nm_pessoa=R
+---
+2014/06/25 17:55:29 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=d
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa%2Findex&nm_pessoa=t
+---
+2014/06/25 17:58:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=T
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa%2Findex&nm_pessoa=R
+---
+2014/06/25 17:59:42 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=T
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa%2Findex&nm_pessoa=R
+---
+2014/06/25 18:00:51 [error] [php] Undefined variable: data (/Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/_search.php:16)
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(869): ListaPessoaController->renderFile()
+#1 /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php(14): ListaPessoaController->renderPartial()
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CBaseController.php(126): require()
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CBaseController.php(95): ListaPessoaController->renderInternal()
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(869): ListaPessoaController->renderFile()
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(782): ListaPessoaController->renderPartial()
+#6 /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php(59): ListaPessoaController->render()
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/actions/CInlineAction.php(49): ListaPessoaController->actionIndex()
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(133): ListaPessoaController->runAction()
+#10 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): ListaPessoaController->filterAccessControl()
+#13 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#15 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): ListaPessoaController->runActionWithFilters()
+#16 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): ListaPessoaController->run()
+#17 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#19 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CWebApplication->run()
+REQUEST_URI=/Banco/index.php?r=listaPessoa%2Findex&nm_pessoa=R
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/_search.php (16)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php (14)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php (59)
+2014/06/25 18:01:11 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=t
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa%2Findex&nm_pessoa=R
+---
+2014/06/25 18:01:12 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=R
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa%2Findex&nm_pessoa=R
+---
+2014/06/25 18:03:54 [error] [php] Undefined variable: pessoa (/Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/_search.php:30)
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(869): ListaPessoaController->renderFile()
+#1 /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php(14): ListaPessoaController->renderPartial()
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CBaseController.php(126): require()
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CBaseController.php(95): ListaPessoaController->renderInternal()
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(869): ListaPessoaController->renderFile()
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(782): ListaPessoaController->renderPartial()
+#6 /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php(59): ListaPessoaController->render()
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/actions/CInlineAction.php(49): ListaPessoaController->actionIndex()
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(133): ListaPessoaController->runAction()
+#10 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): ListaPessoaController->filterAccessControl()
+#13 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#15 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): ListaPessoaController->runActionWithFilters()
+#16 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): ListaPessoaController->run()
+#17 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#19 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CWebApplication->run()
+REQUEST_URI=/Banco/index.php?r=listaPessoa%2Findex&nm_pessoa=R
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/_search.php (30)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/views/listaPessoa/index.php (14)
+in /Users/fabiopriebecarvalho/AppsYii/Banco/protected/controllers/ListaPessoaController.php (59)
+2014/06/25 18:04:17 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=T
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa%2Findex&nm_pessoa=R
+---
+2014/06/25 18:04:24 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=%3C
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa%2Findex&nm_cidade=T
+---
+2014/06/25 18:04:26 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=M
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa%2Findex&nm_cidade=T
+---
+2014/06/25 18:08:23 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=M
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa%2Findex&nm_cidade=T
+---
+2014/06/25 18:08:26 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=%3C
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa%2Findex&nm_cidade=T
+---
+2014/06/25 18:08:28 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=g
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa%2Findex&nm_cidade=T
+---
+2014/06/25 18:08:30 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(282): CController->run('autoCompleteNom...')
+#8 /Users/fabiopriebecarvalho/AppsYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('listaPessoa/aut...')
+#9 /Users/fabiopriebecarvalho/AppsYii/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/fabiopriebecarvalho/AppsYii/Banco/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/Banco/index.php?r=listaPessoa/autoCompleteNomePessoa&term=J
+HTTP_REFERER=http://localhost/Banco/index.php?r=listaPessoa%2Findex&nm_cidade=T
+---

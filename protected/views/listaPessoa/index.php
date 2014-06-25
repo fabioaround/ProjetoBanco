@@ -10,8 +10,11 @@ $this->breadcrumbs=array(
 
 <h1>Lista Pessoas</h1>
 
-<?php
 
+<?php $this->renderPartial('_search',array('model'=>$model)); ?>
+
+
+<?php
 $this->widget('zii.widgets.grid.CGridView', array(
     'dataProvider'=>$dataProvider,
     'columns'=>array(
