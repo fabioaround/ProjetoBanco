@@ -99,42 +99,23 @@ class Pessoa extends CActiveRecord
 	{
 		return parent::model($className);
 	}
-        
-//        public function getNomePessoa($term)
-//        {
-////            $criteria=new CDbCriteria ( array(
-////                'condition' => 'nm_pessoa LIKE :term',
-////                'params' => array (':term' => '%$term%') 
-////                 ));
-////                 
-////                $criteria -> distinct = true;
-////                $criteria -> select = 'nm_pessoa';
-////                
-////                $query = $this->findAll($criteria);
-////                $list = array();
-////                foreach ($query as $criteria){
-////                $list[] = $criteria -> nm_pessoa;    
-////                }
-////                return $list;
-//            return array('Teste1','Teste1','Teste1');
-//        }
-        
-        public function getAutoCompleteNomePessoa($term)
-       {
-               $q = new CDbCriteria( array(
-                       'condition' => "nm_pessoa LIKE :term",
-                       'params'    => array(':term' => "%$term%")
-               ));
 
-               $q->distinct = true;
-               $q->select = array('nm_pessoa','id_pessoa');
+ public function getAutoCompleteNomePessoa($term)
+	{
+		$q = new CDbCriteria( array(
+			'condition' => "nm_pessoa LIKE :term",
+			'params'    => array(':term' => "%$term%")
+		));
 
-               $query = $this->findAll($q);
-               $list = array();
-               foreach($query as $q){
-                       $list[] = $q->nm_pessoa;
-               }
-               return $list;
-       }
-        
+		$q->distinct = true;
+		$q->select = array('nm_pessoa','id_pessoa');
+
+		$query = $this->findAll($q);
+		$list = array();
+		foreach($query as $q){
+			$list[] = $q->nm_pessoa;
+		}
+		return $list;
+	}
+
 }
