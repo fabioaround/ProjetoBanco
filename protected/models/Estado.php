@@ -95,4 +95,10 @@ class Estado extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+        
+        public function teste()
+        {
+            $cidade = Cidade::model()->getA();
+            Cidade::model()->setA('Altara');
+        }
 }

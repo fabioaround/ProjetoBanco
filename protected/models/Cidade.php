@@ -14,6 +14,13 @@
  */
 class Cidade extends CActiveRecord
 {
+
+    private $a = 2;
+            
+    public function __call($name, $arguments) {
+        
+        ;
+    }
 	/**
 	 * @return string the associated database table name
 	 */
@@ -101,4 +108,16 @@ class Cidade extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+        
+        public function getA(){
+            return $this->a;
+        }
+        
+        public function setA($valor) {
+            $b = 3;
+            
+            $this->a += $b;
+            $this->a = $this->a + $b;
+            
+        }
 }
